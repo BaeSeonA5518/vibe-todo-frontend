@@ -1,0 +1,161 @@
+.app {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.app h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.form-add {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-add input {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #2a3142;
+  border-radius: 8px;
+  background: #161b26;
+  color: inherit;
+  outline: none;
+}
+
+.form-add input:focus {
+  border-color: #5b8def;
+  box-shadow: 0 0 0 2px rgba(91, 141, 239, 0.25);
+}
+
+.form-add button {
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(160deg, #5b8def, #4a6fc9);
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.form-add button:hover {
+  filter: brightness(1.08);
+}
+
+.form-add button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: none;
+}
+
+.banner {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.banner.error {
+  background: rgba(239, 91, 91, 0.15);
+  border: 1px solid rgba(239, 91, 91, 0.35);
+  color: #f5a8a8;
+}
+
+.loading {
+  color: #8b93a7;
+  font-size: 0.95rem;
+  padding: 1rem 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #161b26;
+  border: 1px solid #242b3a;
+  border-radius: 10px;
+}
+
+.item-title {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.item-meta {
+  font-size: 0.75rem;
+  color: #6b7289;
+  margin-top: 0.25rem;
+}
+
+.item-actions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.btn-ghost {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid #2f3748;
+  border-radius: 6px;
+  background: transparent;
+  color: #b4bcc8;
+}
+
+.btn-ghost:hover {
+  background: #1e2430;
+  color: #e8eaed;
+}
+
+.btn-danger {
+  border-color: rgba(239, 91, 91, 0.4);
+  color: #f5a8a8;
+}
+
+.btn-danger:hover {
+  background: rgba(239, 91, 91, 0.12);
+}
+
+.edit-form {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.edit-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #5b8def;
+  border-radius: 6px;
+  background: #0f1219;
+  color: inherit;
+  outline: none;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.empty {
+  color: #6b7289;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
