@@ -5,7 +5,7 @@ import {
   fetchTodos,
   updateTodo,
 } from './api/todos'
-// 백엔드 루트(기본 Render). 변경은 apiBaseUrl.js 또는 .env VITE_API_BASE_URL
+// .env VITE_API_BASE_URL (호스트만 또는 .../todos). 실제 todo 요청은 TODOS_API_ROOT
 import { API_BASE_URL } from './apiBaseUrl'
 import './App.css'
 

@@ -1,4 +1,4 @@
-import { API_BASE_URL } from '../apiBaseUrl.js'
+import { TODOS_API_ROOT } from '../apiBaseUrl.js'
 
 async function handleResponse(res) {
   if (res.status === 204) return null
@@ -18,7 +18,7 @@ async function handleResponse(res) {
 }
 
 export function getTodosUrl(path = '') {
-  return `${API_BASE_URL}/todos${path}`
+  return `${TODOS_API_ROOT}${path}`
 }
 
 export async function fetchTodos() {
